@@ -13,6 +13,15 @@
 		ACC10D2F28603D7300EEB003 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC10D2D28603D7300EEB003 /* Main.storyboard */; };
 		ACC10D3128603D7500EEB003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC10D3028603D7500EEB003 /* Assets.xcassets */; };
 		ACC10D3428603D7500EEB003 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC10D3228603D7500EEB003 /* LaunchScreen.storyboard */; };
+		ACC10D3E28604E7F00EEB003 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC10D3C28604E7F00EEB003 /* UserTableViewCell.swift */; };
+		ACC10D3F28604E7F00EEB003 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACC10D3D28604E7F00EEB003 /* UserTableViewCell.xib */; };
+		ACC10D4328604ED400EEB003 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC10D4228604ED400EEB003 /* UserViewModel.swift */; };
+		ACC10D4628604EFD00EEB003 /* UserResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC10D4528604EFD00EEB003 /* UserResponseModel.swift */; };
+		ACC10D4928604F4100EEB003 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC10D4828604F4100EEB003 /* UITableView+Extension.swift */; };
+		ACC10D4B28604F5A00EEB003 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC10D4A28604F5A00EEB003 /* NSObject+Extensions.swift */; };
+		ACC10D4F28604F9A00EEB003 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC10D4E28604F9A00EEB003 /* DetailViewController.swift */; };
+		ACC10D522860502300EEB003 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = ACC10D512860502300EEB003 /* data.json */; };
+		ACC10D552860520800EEB003 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC10D542860520700EEB003 /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		ACC10D3028603D7500EEB003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACC10D3328603D7500EEB003 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACC10D3528603D7500EEB003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACC10D3C28604E7F00EEB003 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		ACC10D3D28604E7F00EEB003 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		ACC10D4228604ED400EEB003 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		ACC10D4528604EFD00EEB003 /* UserResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponseModel.swift; sourceTree = "<group>"; };
+		ACC10D4828604F4100EEB003 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		ACC10D4A28604F5A00EEB003 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
+		ACC10D4E28604F9A00EEB003 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		ACC10D512860502300EEB003 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		ACC10D542860520700EEB003 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +74,88 @@
 		ACC10D2628603D7300EEB003 /* PracticalTest */ = {
 			isa = PBXGroup;
 			children = (
-				ACC10D2728603D7300EEB003 /* AppDelegate.swift */,
-				ACC10D2928603D7300EEB003 /* SceneDelegate.swift */,
-				ACC10D2B28603D7300EEB003 /* ViewController.swift */,
+				ACC10D532860508A00EEB003 /* AppDelegates */,
+				ACC10D4428604EE700EEB003 /* Model */,
+				ACC10D4128604EBA00EEB003 /* ViewModel */,
+				ACC10D3B28604E4F00EEB003 /* View */,
+				ACC10D4728604F2B00EEB003 /* Extensions */,
+				ACC10D502860500F00EEB003 /* Resources */,
 				ACC10D2D28603D7300EEB003 /* Main.storyboard */,
 				ACC10D3028603D7500EEB003 /* Assets.xcassets */,
 				ACC10D3228603D7500EEB003 /* LaunchScreen.storyboard */,
 				ACC10D3528603D7500EEB003 /* Info.plist */,
 			);
 			path = PracticalTest;
+			sourceTree = "<group>";
+		};
+		ACC10D3B28604E4F00EEB003 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ACC10D4D28604F7D00EEB003 /* DetailView */,
+				ACC10D4C28604F7200EEB003 /* MainView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ACC10D4128604EBA00EEB003 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ACC10D4228604ED400EEB003 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ACC10D4428604EE700EEB003 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACC10D4528604EFD00EEB003 /* UserResponseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ACC10D4728604F2B00EEB003 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ACC10D4828604F4100EEB003 /* UITableView+Extension.swift */,
+				ACC10D4A28604F5A00EEB003 /* NSObject+Extensions.swift */,
+				ACC10D542860520700EEB003 /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ACC10D4C28604F7200EEB003 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				ACC10D2B28603D7300EEB003 /* ViewController.swift */,
+				ACC10D3C28604E7F00EEB003 /* UserTableViewCell.swift */,
+				ACC10D3D28604E7F00EEB003 /* UserTableViewCell.xib */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		ACC10D4D28604F7D00EEB003 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				ACC10D4E28604F9A00EEB003 /* DetailViewController.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		ACC10D502860500F00EEB003 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ACC10D512860502300EEB003 /* data.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ACC10D532860508A00EEB003 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				ACC10D2728603D7300EEB003 /* AppDelegate.swift */,
+				ACC10D2928603D7300EEB003 /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +216,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC10D3F28604E7F00EEB003 /* UserTableViewCell.xib in Resources */,
 				ACC10D3428603D7500EEB003 /* LaunchScreen.storyboard in Resources */,
 				ACC10D3128603D7500EEB003 /* Assets.xcassets in Resources */,
+				ACC10D522860502300EEB003 /* data.json in Resources */,
 				ACC10D2F28603D7300EEB003 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +231,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC10D4F28604F9A00EEB003 /* DetailViewController.swift in Sources */,
+				ACC10D3E28604E7F00EEB003 /* UserTableViewCell.swift in Sources */,
 				ACC10D2C28603D7300EEB003 /* ViewController.swift in Sources */,
+				ACC10D4928604F4100EEB003 /* UITableView+Extension.swift in Sources */,
 				ACC10D2828603D7300EEB003 /* AppDelegate.swift in Sources */,
+				ACC10D4628604EFD00EEB003 /* UserResponseModel.swift in Sources */,
+				ACC10D4328604ED400EEB003 /* UserViewModel.swift in Sources */,
 				ACC10D2A28603D7300EEB003 /* SceneDelegate.swift in Sources */,
+				ACC10D552860520800EEB003 /* UIViewController+Extension.swift in Sources */,
+				ACC10D4B28604F5A00EEB003 /* NSObject+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
